@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 - Calculator</title>
+  <style>
+    /* Center everything */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      text-align: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style buttons */
+    button {
+      font-size: 20px;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+  
+
+    .row {
+      display: flex;
+    }
+
+    /* Display Screen */
+    #display {
+      font-size: 24px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 2px solid rgb(3, 3, 3);
+      min-width: 200px;
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Project 1</h1>
+    Hello this is working
+<p>
+    <button id="buttonOne">1</button>
+    <button id="buttonTwo">2</button>
+    <button id="buttonThree">3</button>
+    <button id="buttonPlus">+</button> </p>
+<p>
+    <button id="buttonFour">4</button>
+    <button id="buttonFive">5</button>
+    <button id="buttonSix">6</button>
+    <button id="buttonMinus">-</button> </p>
+    
+    <button onclick="
+      display = eval(display);
+      console.log(display)
+      display = '';
+    ">=</button>
+    
+
+    <script>
+
+      let display = '';
+      document.getElementById("buttonOne").addEventListener("click", () => {
+      display += '1'
+      console.log(display);
+      });
+
+      document.getElementById("buttonTwo").addEventListener("click", () => {
+      display += '2'
+      console.log(display);
+      });
+
+      document.getElementById("buttonThree").addEventListener("click", () => {
+      display += '3'
+      console.log(display);
+      });
+
+      document.getElementById("buttonPlus").addEventListener("click", () => {
+      display += ' + '
+      console.log(display);
+      });
+
+      document.getElementById("buttonFour").addEventListener("click", () => {
+      display += '4'
+      console.log(display);
+      });
+
+      document.getElementById("buttonFive").addEventListener("click", () => {
+      display += '5'
+      console.log(display);
+      });
+
+      document.getElementById("buttonSix").addEventListener("click", () => {
+      display += '6'
+      console.log(display);
+      });
+
+      document.getElementById("buttonMinus").addEventListener("click", () => {
+      display += ' - '
+      console.log(display);
+      });
+
+    </script>
+  </body>
+</html>
